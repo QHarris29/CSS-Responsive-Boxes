@@ -1,3 +1,76 @@
+* {
+  border: 5px solid black;
+}
 body {
   background: papayawhip;
+}
+.container {
+  background-color: rgb(202, 127, 127);
+  color: white;
+  outline: 2px solid red;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-size: 2em;
+  text-align: center;
+}
+  
+.a, .f{
+  background-color: blueviolet;
+  flex-grow: 1;
+  
+}
+.b{
+  background-color: rgb(136, 95, 173);
+  flex-grow: 3;
+  
+  
+}
+.c{
+  background-color: rgb(76, 43, 226);
+  width: 30%;
+  height:2em;
+}
+.d{
+  background-color: rgb(110, 0, 212)3, 226);
+  
+  width: 30%;
+  height:2em;
+}
+.e{
+  background-color: rgb(43, 174, 226);
+  
+  width: 30%;
+  height:2em;
+}
+.a, .b, .c, .d, .e, .f {
+  margin: 0.5em;
+}
+.bcde {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  min-height: 70vh;
+}
+.cde {
+  display: flex;
+}
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .a {
+    width: 100vw;
+    height: 30vh;
+  }
+  .b{
+    height: 40vh;
+  }
+  .cde {
+    height: 30vh;
+  }
+  .bcde {
+    flex-grow: 2;
+  }
 }

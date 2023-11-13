@@ -1,3 +1,51 @@
 body {
   background: peachpuff;
 }
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: aquamarine;
+  justify-content: space-between;
+}
+.a, .b, .c, .d, .e, .f, .g, .h {
+  margin: 5em;}
+
+ .b, .c, .d, .e, .f, .g {
+    background: blueviolet;
+    flex-grow: 1;
+    height: 30%;
+  }
+
+.a {
+  background: red;
+  height: 20%;
+}
+.h {
+  flex-grow: 1;
+  background: goldenrod;
+}
+.b-g {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: auto;
+  height: 35%;
+}
+.h-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 600px) {
+  .a {
+    height: 40%;
+  }
+  .h-container {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .b-g{
+    height: 100%;
+    flex-grow: 4;
+  }
+}
